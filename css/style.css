@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #80808042;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.person-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-10px);
+}
+
+.person-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.person-info {
+  padding-top: 15px;
+}
+
+.person-name {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.person-designation {
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 5px;
+}
+
+.person-description {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+ /* For line clamp */
+  line-height: 1.4;
+  max-height: 44px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+ /* For line clamp */
+  /* line-height: 1.4;
+  max-height: 44px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; */
